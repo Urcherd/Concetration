@@ -51,12 +51,7 @@ var flipCount = 0 {
             
     }
 }
-    func newGame() {
-        flipCount = 0
-        for index in cardsButtons.indices {
-            
-        }
-    }
+    
  var emojiChoiser = ["👀", "👁", "😈", "💍", "📟", "🦄", "🐼", "💩", "☎️"]
     
     var emoji = [Int:String]()
