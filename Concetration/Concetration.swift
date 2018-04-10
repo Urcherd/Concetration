@@ -20,7 +20,7 @@ class Concetration
         flipCount += 1
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
-                if cards[matchIndex].identifier == cards[index].identifier, !cards[index].isSaw {
+                if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                     score += 2
@@ -29,6 +29,7 @@ class Concetration
                     score -= 1
                 }
                 cards[index].isFacedUp = true
+                cards[index].isSaw = true
                 indexOfOneAndOnlyFaceUpCard = nil
             } else if indexOfOneAndOnlyFaceUpCard != nil {
                cards[index].isFacedUp = false
